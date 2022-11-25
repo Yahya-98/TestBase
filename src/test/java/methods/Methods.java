@@ -11,7 +11,10 @@ import org.openqa.selenium.Keys;
 import selector.Selector;
 import selector.SelectorFactory;
 import javax.annotation.Nullable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -23,7 +26,7 @@ public class Methods {
 
     public Methods() {
         driver = DriverSetup.driver;
-        wait = new FluentWait(driver);
+        wait = new FluentWait<>(driver);
         wait.withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(300))
                 .ignoring(NoSuchElementException.class);
@@ -42,7 +45,7 @@ public class Methods {
     }
 
     public WebElement findElement(By by) {
-        return (WebElement) wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
     public List<WebElement> findElements(By by) {
@@ -96,8 +99,20 @@ public class Methods {
         actions.moveToElement(findElementBykey(element)).perform();
     }
 
+    public String addDay(int day) {
+
+        DateFormat dateFormat = new SimpleDateFormat("d");
+        Date date = new Date(new Date().getTime() + 86400000L * day); // one day = 1000 * 60 * 60 * 24 = 86400000
+        return dateFormat.format(date);
+    }
+
+    public String getCurrentURL(){
+        return driver.getCurrentUrl();
+    }
+
     public void keyEnter(String element) {
         findElementBykey(element).sendKeys(Keys.ENTER);
     }
+
 
 }

@@ -1,10 +1,5 @@
 [
   {
-    "key": "btnStarted",
-    "keyValue": ".cta-primary",
-    "keyType": "css"
-  },
-  {
     "key": "inputSearch",
     "keyValue":"//input[@name='q']",
     "keyType": "xpath"
