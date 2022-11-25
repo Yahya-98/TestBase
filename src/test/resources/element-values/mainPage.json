@@ -1,0 +1,22 @@
+[
+  {
+    "key": "btnStarted",
+    "keyValue": ".cta-primary",
+    "keyType": "css"
+  },
+  {
+    "key": "inputSearch",
+    "keyValue":"//input[@name='q']",
+    "keyType": "xpath"
+  },
+  {
+    "key": "res",
+    "keyValue": "result-stats",
+    "keyType": "id"
+  },
+  {
+    "key": "hover",
+    "keyValue": ".yuRUbf>[href='https://gauge.org/']",
+    "keyType": "css"
+  }
+]
