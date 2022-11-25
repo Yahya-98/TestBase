@@ -11,6 +11,7 @@ public class DriverSetup {
     @BeforeSuite
     public void setUp() {
         driver = DriverFactory.getDriver(DriverSelector.CHROME);
+        driver.manage().window().maximize();
     }
 
     @AfterSuite

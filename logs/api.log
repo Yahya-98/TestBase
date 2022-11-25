@@ -558,3 +558,12 @@
 25-11-2022 11:26:08.936 [Gauge] [DEBUG] Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Start driver" parameterizedStepValue:"Start driver" > allSteps:<stepValue:"Search {}" parameterizedStepValue:"Search <gauge>" parameters:"gauge" > > 
 25-11-2022 11:26:08.936 [Gauge] [DEBUG] Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
 25-11-2022 11:26:08.937 [Gauge] [DEBUG] Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<concepts:<stepValue:<stepValue:"First Concept" parameterizedStepValue:"First Concept" > filepath:"C:\\Users\\testinium\\Desktop\\TestBase\\specs\\PageConcept\\SearchPage.cpt" lineNumber:4 > > 
+25-11-2022 13:37:10.857 [Gauge] [INFO] Watching directory: C:\Users\testinium\Desktop\TestBase\specs
+25-11-2022 13:37:10.858 [Gauge] [DEBUG] Found 2 files
+25-11-2022 13:37:10.858 [Gauge] [INFO] Watching directory: C:\Users\testinium\Desktop\TestBase\specs\PageConcept
+25-11-2022 13:37:10.858 [Gauge] [DEBUG] Found 1 files
+25-11-2022 13:37:10.870 [Gauge] [INFO] Initializing concepts cache with 1 concepts
+25-11-2022 13:37:10.870 [Gauge] [DEBUG] Adding concepts from C:\Users\testinium\Desktop\TestBase\specs\PageConcept\SearchPage.cpt
+25-11-2022 13:37:10.883 [Gauge] [INFO] Initializing specs cache with 1 specs
+25-11-2022 13:37:10.884 [Gauge] [DEBUG] Adding specs from C:\Users\testinium\Desktop\TestBase\specs\Scenarios.spec
+25-11-2022 13:37:10.870 [Gauge] [INFO] Concept file added / modified: C:\Users\testinium\Desktop\TestBase\specs\PageConcept\SearchPage.cpt
